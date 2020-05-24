@@ -9,7 +9,6 @@ import com.avito.instrumentation.rerun.MergeResultsWithTargetBranchRun
 import com.avito.instrumentation.suite.TestSuiteProvider
 import com.avito.instrumentation.suite.dex.TestSuiteLoader
 import com.avito.instrumentation.suite.dex.check.AllChecks
-import com.avito.report.ReportsApi
 import com.avito.report.model.ReportCoordinates
 import com.avito.report.model.SimpleRunTest
 import com.avito.utils.logging.CILogger
@@ -17,7 +16,6 @@ import org.funktionale.tries.Try
 
 class InstrumentationTestsScheduler(
     private val testsRunner: TestsRunner,
-    private val reportsApi: ReportsApi,
     private val logger: CILogger,
     private val params: InstrumentationTestsAction.Params,
     private val reportCoordinates: ReportCoordinates,
