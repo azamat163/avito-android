@@ -135,7 +135,8 @@ abstract class InstrumentationTestsTask @Inject constructor(
                     reportApiUrl = reportApiUrl.get(),
                     reportApiFallbackUrl = reportApiFallbackUrl.get(),
                     ciLogger = ciLogger
-                )
+                ),
+                Report.Factory.Config.InMemory::class.java to Report.Factory.InMemoryReportFactory()
             )
         )
 
