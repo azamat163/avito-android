@@ -30,6 +30,7 @@ dependencies {
     implementation(project(":common:sentry"))
     implementation(project(":common:logger"))
     implementation(project(":gradle:upload-cd-build-result"))
+    implementation(project(":gradle:worker-worker"))
     implementation(Dependencies.dexlib)
     implementation(Dependencies.gson)
     implementation(Dependencies.teamcityClient)
